@@ -186,9 +186,9 @@ public class PaperDatabase
                 return true;
             }
             
-        }catch(Exception ex)
+        }catch(Exception e)
         {
-            System.err.println("exception in connectToDB " + ex.getLocalizedMessage());
+            System.err.println("error in connectToDB | " + e.getStackTrace());
             return false;
         } 
         
