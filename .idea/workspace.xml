@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4f8cb11-93f8-4fd3-ac99-cdfda35ca735" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TimetableGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TimetableGenerator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/derby.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autpapers/db.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/timetablegenerator/PaperDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/timetablegenerator/PaperDatabase.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +29,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/timetablegenerator/PaperDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="163">
               <caret line="190" column="76" selection-start-line="190" selection-start-column="76" selection-end-line="190" selection-end-column="76" />
             </state>
           </provider>
@@ -107,7 +104,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543567910118" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543567960047" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Derby" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/derby.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -164,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1543563313435</updated>
       <workItem from="1543563316728" duration="3488000" />
-      <workItem from="1543567230444" duration="542000" />
+      <workItem from="1543567230444" duration="782000" />
     </task>
     <task id="LOCAL-00001" summary="Getting things working">
       <created>1543566470891</created>
@@ -180,16 +177,23 @@
       <option name="project" value="LOCAL" />
       <updated>1543566585418</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Getting things working">
+      <created>1543567948925</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543567948925</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4030000" />
+    <option name="totallyTimeSpent" value="4270000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="237" y="12" width="1388" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2567771" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -198,7 +202,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8930723" visible="true" weight="0.32929516" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.89285713" visible="true" weight="0.28030303" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -207,7 +211,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.10692771" side_tool="true" visible="true" weight="0.32929516" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.10714286" side_tool="true" visible="true" weight="0.28030303" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49358425" weight="0.32929516" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -243,7 +247,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/timetablegenerator/PaperDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="163">
           <caret line="190" column="76" selection-start-line="190" selection-start-column="76" selection-end-line="190" selection-end-column="76" />
         </state>
       </provider>
