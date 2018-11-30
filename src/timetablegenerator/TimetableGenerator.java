@@ -25,8 +25,9 @@ public class TimetableGenerator extends JFrame{
         System.out.println("" + this.model.getPapersArrayList().size() + this.model.getPapersArrayList().get(4).getStreams());
         System.out.println("s1 List contains - " + this.model.getSemesterOnePapers().size());
         System.out.println("s2 List contains - " + this.model.getSemesterTwoPapers().size());
+        System.out.println("Hey Jaime");
 
-        // sets the parameters of the frame
+        // sets the parameters of the frame la
         this.getContentPane().add(this.view);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(1100, 530); // manually computed sizes
