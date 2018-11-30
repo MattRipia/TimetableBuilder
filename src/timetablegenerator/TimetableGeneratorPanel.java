@@ -435,7 +435,16 @@ public class TimetableGeneratorPanel extends JPanel implements ActionListener, C
                 int paperSelection = this.paperList.getSelectedIndex();
                 String paperName = this.paperList.getSelectedValue();
                 
-                System.out.println("selection - " + paperSelection + " name - " + paperName);
+                System.out.println(paperName);
+                Paper selectedPaperDetails = this.model.getSemesterOnePapers().get(paperSelection);
+                for (Stream aStream : selectedPaperDetails.getStreams())
+                {
+                    System.out.println("Stream: " + aStream.getStreamNumber());
+                    for (Session aSession : aStream.getSessions())
+                    {
+                        System.out.println(aSession.getDay() + " " + aSession.getStartTime() + " -> " + aSession.getEndTime());
+                    }
+                }
                 
                 // works out which semester we want to use to populate our chosen papers
                 // then uses this to figure out which list to take the paper from
