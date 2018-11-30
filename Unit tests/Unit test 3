@@ -1,0 +1,532 @@
+run:
+Welcome to the timetable builder
+
+Created by...
+Jaime King - 16959932
+Matt Ripia - 1385931
+
+This program will output all non-clashing timetables once 4 papers have been selected
+The current papers that can be selected are from: AUT university, semester 2, 2018
+It will then save all the timetables to file
+
+please select 4 papers you wish to build a timetable from...
+
+1)Applied Communication
+2)Computer Network Applications
+3)Data and Process Modelling
+4)Data Stuctures and Algorithms
+5)Enterprise Systems
+6)Foundations of IT Infrastucture
+7)IT Project Management
+8)IT Service Provision
+9)Logical Database Design
+10)Operating Systems
+11)Physical Database Design
+12)Programming 2
+13)Software Development Practice
+
+---- Select a paper or enter 0 to show papers: 200
+
+---- That input is invalid. (Only numbers are accepted.) ----
+
+---- Select a paper or enter 0 to show papers: 2
+
+---- You have added Computer Network Applications
+
+---- Select a paper or enter 0 to show papers: 5
+
+---- You have added Enterprise Systems
+
+---- Select a paper or enter 0 to show papers: 7
+
+---- You have added IT Project Management
+
+---- Select a paper or enter 0 to show papers: 9
+
+---- You have added Logical Database Design
+
+---------------------------------------
+This is timetable number: 1
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 50
+COMP600   - Stream: 50
+INFS601   - Stream: 50
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            INFS601 WZ602 16.00 - 18.00
+            
+Wednesday - COMP600 WZ519 10.00 - 12.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS500 WZ602 16.00 - 18.00
+            
+
+---------------------------------------
+This is timetable number: 2
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 50
+COMP600   - Stream: 50
+INFS601   - Stream: 51
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - COMP600 WZ519 10.00 - 12.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS500 WZ602 16.00 - 18.00
+            INFS601 WZ601 08.00 - 10.00
+            
+
+---------------------------------------
+This is timetable number: 3
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 50
+COMP600   - Stream: 50
+INFS601   - Stream: 53
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - COMP600 WZ519 10.00 - 12.00
+            INFS601 WZ601 12.00 - 14.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS500 WZ602 16.00 - 18.00
+            
+
+---------------------------------------
+This is timetable number: 4
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 50
+COMP600   - Stream: 53
+INFS601   - Stream: 50
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            INFS601 WZ602 16.00 - 18.00
+            
+Wednesday - 
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS500 WZ602 16.00 - 18.00
+            
+
+---------------------------------------
+This is timetable number: 5
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 50
+COMP600   - Stream: 53
+INFS601   - Stream: 51
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - 
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS500 WZ602 16.00 - 18.00
+            INFS601 WZ601 08.00 - 10.00
+            
+
+---------------------------------------
+This is timetable number: 6
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 50
+COMP600   - Stream: 53
+INFS601   - Stream: 53
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - INFS601 WZ601 12.00 - 14.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS500 WZ602 16.00 - 18.00
+            
+
+---------------------------------------
+This is timetable number: 7
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 51
+COMP600   - Stream: 50
+INFS601   - Stream: 50
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            INFS601 WZ602 16.00 - 18.00
+            
+Wednesday - COMP600 WZ519 10.00 - 12.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS500 WZ519 08.00 - 10.00
+            
+
+---------------------------------------
+This is timetable number: 8
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 51
+COMP600   - Stream: 50
+INFS601   - Stream: 53
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - COMP600 WZ519 10.00 - 12.00
+            INFS601 WZ601 12.00 - 14.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS500 WZ519 08.00 - 10.00
+            
+
+---------------------------------------
+This is timetable number: 9
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 51
+COMP600   - Stream: 53
+INFS601   - Stream: 50
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            INFS601 WZ602 16.00 - 18.00
+            
+Wednesday - 
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS500 WZ519 08.00 - 10.00
+            
+
+---------------------------------------
+This is timetable number: 10
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 51
+COMP600   - Stream: 53
+INFS601   - Stream: 53
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - INFS601 WZ601 12.00 - 14.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS500 WZ519 08.00 - 10.00
+            
+
+---------------------------------------
+This is timetable number: 11
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 52
+COMP600   - Stream: 50
+INFS601   - Stream: 50
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            INFS601 WZ602 16.00 - 18.00
+            
+Wednesday - INFS500 WZ601 14.00 - 16.00
+            COMP600 WZ519 10.00 - 12.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            
+
+---------------------------------------
+This is timetable number: 12
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 52
+COMP600   - Stream: 50
+INFS601   - Stream: 51
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - INFS500 WZ601 14.00 - 16.00
+            COMP600 WZ519 10.00 - 12.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS601 WZ601 08.00 - 10.00
+            
+
+---------------------------------------
+This is timetable number: 13
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 52
+COMP600   - Stream: 50
+INFS601   - Stream: 53
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - INFS500 WZ601 14.00 - 16.00
+            COMP600 WZ519 10.00 - 12.00
+            INFS601 WZ601 12.00 - 14.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            
+
+---------------------------------------
+This is timetable number: 14
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 52
+COMP600   - Stream: 53
+INFS601   - Stream: 50
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            INFS601 WZ602 16.00 - 18.00
+            
+Wednesday - INFS500 WZ601 14.00 - 16.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            
+
+---------------------------------------
+This is timetable number: 15
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 52
+COMP600   - Stream: 53
+INFS601   - Stream: 51
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - INFS500 WZ601 14.00 - 16.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS601 WZ601 08.00 - 10.00
+            
+
+---------------------------------------
+This is timetable number: 16
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 52
+COMP600   - Stream: 53
+INFS601   - Stream: 53
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - INFS500 WZ601 14.00 - 16.00
+            INFS601 WZ601 12.00 - 14.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            
+
+---------------------------------------
+This is timetable number: 17
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 53
+COMP600   - Stream: 50
+INFS601   - Stream: 50
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            INFS601 WZ602 16.00 - 18.00
+            
+Wednesday - INFS500 WZ602 08.00 - 10.00
+            COMP600 WZ519 10.00 - 12.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            
+
+---------------------------------------
+This is timetable number: 18
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 53
+COMP600   - Stream: 50
+INFS601   - Stream: 51
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - INFS500 WZ602 08.00 - 10.00
+            COMP600 WZ519 10.00 - 12.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS601 WZ601 08.00 - 10.00
+            
+
+---------------------------------------
+This is timetable number: 19
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 53
+COMP600   - Stream: 50
+INFS601   - Stream: 53
+
+Monday    - INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - INFS500 WZ602 08.00 - 10.00
+            COMP600 WZ519 10.00 - 12.00
+            INFS601 WZ601 12.00 - 14.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            
+
+---------------------------------------
+This is timetable number: 20
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 53
+COMP600   - Stream: 53
+INFS601   - Stream: 50
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            INFS601 WZ602 16.00 - 18.00
+            
+Wednesday - INFS500 WZ602 08.00 - 10.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            
+
+---------------------------------------
+This is timetable number: 21
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 53
+COMP600   - Stream: 53
+INFS601   - Stream: 51
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - INFS500 WZ602 08.00 - 10.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            INFS601 WZ601 08.00 - 10.00
+            
+
+---------------------------------------
+This is timetable number: 22
+
+ENEL611   - Stream: 50
+INFS500   - Stream: 53
+COMP600   - Stream: 53
+INFS601   - Stream: 53
+
+Monday    - COMP600 WZ602 14.00 - 16.00
+            INFS601 WZ416 09.00 - 11.00
+            
+Tuesday   - ENEL611 WZ255 12.00 - 02.00
+            INFS500 WZ416 09.00 - 11.00
+            
+Wednesday - INFS500 WZ602 08.00 - 10.00
+            INFS601 WZ601 12.00 - 14.00
+            
+Thursday  - COMP600 WA220 10.00 - 12.00
+            
+Friday    - ENEL611 WZ255 14.00 - 16.00
+            
+---- There were 22 timetables generated with that selection.
+BUILD SUCCESSFUL (total time: 10 seconds)

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Nov 30 20:15:49 NZDT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0167-6379-3f8e-000005fa8088 
+on database directory C:\Users\Matt\Documents\Project archive\TimetableGenerator\autpapers with class loader sun.misc.Launcher$AppClassLoader@4e25154f 
+Loaded from file:/C:/Users/Matt/Desktop/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_191-b12
+user.dir=C:\Users\Matt\Documents\Project archive\TimetableGenerator
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
