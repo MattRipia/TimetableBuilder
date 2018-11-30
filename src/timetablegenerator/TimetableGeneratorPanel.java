@@ -13,9 +13,7 @@ import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import javafx.scene.control.RadioButton;
 import javax.swing.BorderFactory;
-import javax.swing.Box;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -31,8 +29,6 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.border.Border;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 
 /**
  *
@@ -249,7 +245,7 @@ public class TimetableGeneratorPanel extends JPanel implements ActionListener, C
      * this is called when generate is clicked or the slider is moved.
      * @param aTimetable 
      */
-    public void updateCalenderView(Timetable aTimetable)
+    public void updateCalenderView(TimetableGenerator.Timetable aTimetable)
     {
         /*
         Size of 1 hr session 42px wide, 40px high

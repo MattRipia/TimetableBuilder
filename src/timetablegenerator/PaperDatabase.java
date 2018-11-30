@@ -3,7 +3,6 @@ package timetablegenerator;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -12,8 +11,8 @@ import java.util.logging.Logger;
 public class PaperDatabase 
 {
     private ArrayList<Paper> paperArrayList, semesterOnePapers, semesterTwoPapers, selectedPapers;
-    public ArrayList<Timetable> timetableArrayList = new ArrayList();
-    private Timetable aTimetable = new Timetable();
+    public ArrayList<TimetableGenerator.Timetable> timetableArrayList = new ArrayList();
+    private TimetableGenerator.Timetable aTimetable = new TimetableGenerator.Timetable();
     private Connection conn, conn2, jdbcConn;
     private Statement statement, statement2, statement3;
   
@@ -326,7 +325,7 @@ public class PaperDatabase
      *  Current limitation to this is there are only 4 paper combos which are allowed, this needs to be
      *  changed to suit 2, 3, or 5 papers also.
      */
-    public static boolean isClash(Timetable aTimetable)
+    public static boolean isClash(TimetableGenerator.Timetable aTimetable)
     {
         boolean isClash = false;
         
@@ -388,7 +387,7 @@ public class PaperDatabase
                     for(int d = 0; d < aTimetable.getPaperAtIndex(3).getStreams().size(); d++)
                     {
                         // creates all possible timetables with all 4 papers based on each stream
-                        Timetable tempTimetable = new Timetable(timetableCounter);
+                        TimetableGenerator.Timetable tempTimetable = new TimetableGenerator.Timetable(timetableCounter);
                         tempTimetable.createPerms(a, b, c, d);
 
                         // if there is no clash, parse in the timetable onject into an arraylist of timetables to be printed
@@ -458,11 +457,11 @@ public class PaperDatabase
         
         return paperTitles;
     }
-    public Timetable getaTimetable() {
+    public TimetableGenerator.Timetable getaTimetable() {
         return aTimetable;
     }
 
-    public void setaTimetable(Timetable aTimetable) {
+    public void setaTimetable(TimetableGenerator.Timetable aTimetable) {
         this.aTimetable = aTimetable;
     }
 
@@ -479,11 +478,11 @@ public class PaperDatabase
         selectedPapers.remove(i);
     }
       
-    public ArrayList<Timetable> getTimetableArrayList() {
+    public ArrayList<TimetableGenerator.Timetable> getTimetableArrayList() {
         return timetableArrayList;
     }
 
-    public void setTimetableArrayList(ArrayList<Timetable> timetableArrayList) {
+    public void setTimetableArrayList(ArrayList<TimetableGenerator.Timetable> timetableArrayList) {
         this.timetableArrayList = timetableArrayList;
     }
 
