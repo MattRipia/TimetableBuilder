@@ -50,42 +50,67 @@ public class PaperDatabase
     private void populateSemesterLists(){
         
         // for each paper in the arrayList
+        // create a new paper, and parse all the details to it by value
         for(Paper aPaper : paperArrayList)
         {
             ArrayList<Stream> semesterOneStreams = new ArrayList();
             ArrayList<Stream> semesterTwoStreams = new ArrayList();
-            
+
+            Paper semesterOnePaper = new Paper();
+            Paper semesterTwoPaper = new Paper();
+            semesterOnePaper.setPaperCode(aPaper.getPaperCode());
+            semesterOnePaper.setPaperName(aPaper.getPaperName());
+            semesterTwoPaper.setPaperCode(aPaper.getPaperCode());
+            semesterTwoPaper.setPaperName(aPaper.getPaperName());
+
             // for each stream in a paper
+            // create a new Stream, where we copy everything to it by value.
+            // each stream has an arrayList of values that needs to be copied by value also
             for(Stream aStream : aPaper.getStreams())
             {
-                // a s1 stream, add this to the temp arrayList
-                if(aStream.getSemester().toLowerCase().contains("s1"))
+                Stream streamByValue = new Stream();
+                ArrayList<Session> sessionsByValue = new ArrayList();
+                streamByValue.setStreamNumber(aStream.getStreamNumber());
+                streamByValue.setSemester(aStream.getSemester());
+                streamByValue.setYear(aStream.getYear());
+
+                // coping all the values in the session belonging to a stream by value, so these can be added to a the streamByValue
+                for (Session aSession : aStream.getSessions())
                 {
-                    semesterOneStreams.add(aStream);
+                    Session sessionByValue = new Session();
+                    sessionByValue.setDay(aSession.getDay());
+                    sessionByValue.setRoom(aSession.getRoom());
+                    sessionByValue.setStartTime(aSession.getStartTime());
+                    sessionByValue.setEndTime(aSession.getEndTime());
+                    sessionsByValue.add(sessionByValue);
+                }
+
+                streamByValue.setSessions(sessionsByValue);
+
+                // a s1 stream, add this to the temp arrayList
+                if(aStream.getSemester().toLowerCase().equals("s1"))
+                {
+                    semesterOneStreams.add(streamByValue);
+                    System.out.println("Stream " + streamByValue.getStreamNumber() + " added to semester 1 papers");
                 }
                 // a s2 stream, add this to the temp arrayList 
-                else if (aStream.getSemester().toLowerCase().contains("s2"))
+                else if (aStream.getSemester().toLowerCase().equals("s2"))
                 {
-                    semesterTwoStreams.add(aStream);
+                    semesterTwoStreams.add(streamByValue);
+                    System.out.println("Stream " + streamByValue.getStreamNumber() + " added to semester 2 papers");
                 }
             }
-            
-            // removes all the streams from aPaper, allowing us to add to only add s1 streams or s2 streams
-            aPaper.removeAllStreams();
               
             if(semesterOneStreams.size() > 0)
             {
-                aPaper.setStream(semesterOneStreams);
-                getSemesterOnePapers().add(aPaper);
+                semesterOnePaper.setStream(semesterOneStreams);
+                getSemesterOnePapers().add(semesterOnePaper);
             }
-            
-            // clearing the streams again, incase there are s1 and s2 streams for the current paper
-            aPaper.removeAllStreams();
-            
+
             if(semesterTwoStreams.size() > 0)
             {
-                aPaper.setStream(semesterTwoStreams);
-                getSemesterTwoPapers().add(aPaper);
+                semesterTwoPaper.setStream(semesterTwoStreams);
+                getSemesterTwoPapers().add(semesterTwoPaper);
             }
         }
     }

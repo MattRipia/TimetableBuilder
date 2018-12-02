@@ -17,41 +17,40 @@ class Stream {
     
     public Stream(String stream, String year, String semester)
     {
-        this.sessions = new ArrayList();
-        this.year = year;
-        this.streamNumber = stream;
-        this.semester = semester;
+        this.setSessions(new ArrayList());
+        this.setYear(year);
+        this.setStreamNumber(stream);
+        this.setSemester(semester);
     }
 
     public Stream(ArrayList<Session> sessions, String streamNumber) {
-        this.sessions = sessions;
-        this.streamNumber = streamNumber;
+        this.setSessions(sessions);
+        this.setStreamNumber(streamNumber);
     }
     
     public Stream(Session session, String sNumber){
         
-        this.sessions = new ArrayList<>();
-        sessions.add(session);
-        this.streamNumber = sNumber;
+        this.setSessions(new ArrayList<>());
+        getSessions().add(session);
+        this.setStreamNumber(sNumber);
     }
     
     public Stream(String streamNo)
     {
-        this.streamNumber = streamNo;
-        sessions = new ArrayList();
+        this.setStreamNumber(streamNo);
+        setSessions(new ArrayList());
     }
 
     public Stream() {
         
         Session newSession = new Session();
-        this.sessions = new ArrayList<>();
-        
-        this.sessions.add(newSession);
-        this.streamNumber = "unknown";
+        this.setSessions(new ArrayList<>());
+        this.getSessions().add(newSession);
+        this.setStreamNumber("unknown");
     }
     
     public void addSession(Session parsedSession){
-        sessions.add(parsedSession);
+        getSessions().add(parsedSession);
     }
 
     public ArrayList<Session> getSessions() {
@@ -59,11 +58,11 @@ class Stream {
     }
     
     public Session getSessionAtIndex(int i){
-        return this.sessions.get(i);
+        return this.getSessions().get(i);
     }
     
     public int getSessionLength(){
-        return this.sessions.size();
+        return this.getSessions().size();
     }
 
     public String getStreamNumber() {
@@ -74,30 +73,37 @@ class Stream {
         this.streamNumber = streamNumber;
     }
 
-    /**
-     * @return the semester
-     */
     public String getSemester() {
         return semester;
     }
 
-    /**
-     * @return the year
-     */
     public String getYear() {
         return year;
     }
     
+    public void setSessions(ArrayList<Session> sessions) {
+        this.sessions = sessions;
+    }
+
+    public void setSemester(String semester) {
+        this.semester = semester;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
     @Override
     public String toString(){
-        
+
         String temp = "";
-        
+
         for(int i = 0; i < getSessions().size(); i++)
         {
             temp += getSessions().get(i).toString() + "\n";
         }
-        
+
         return  "StreamNo: " +getStreamNumber() + "\n" + "Session details:\n" + temp;
     }
+
 }

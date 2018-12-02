@@ -436,6 +436,7 @@ public class TimetableGeneratorPanel extends JPanel implements ActionListener, C
                 String paperName = this.paperList.getSelectedValue();
                 
                 System.out.println(paperName);
+
                 Paper selectedPaperDetails = this.model.getSemesterOnePapers().get(paperSelection);
                 for (Stream aStream : selectedPaperDetails.getStreams())
                 {

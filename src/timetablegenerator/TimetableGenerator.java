@@ -22,8 +22,7 @@ public class TimetableGenerator extends JFrame{
         super("Timetable Generator");
         this.model = new PaperDatabase();
         this.view = new TimetableGeneratorPanel(this.model);
-        
-        System.out.println("" + this.model.getPapersArrayList().size() + this.model.getPapersArrayList().get(4).getStreams());
+
         System.out.println("s1 List contains - " + this.model.getSemesterOnePapers().size());
         System.out.println("s2 List contains - " + this.model.getSemesterTwoPapers().size());
         System.out.println("Hey Jaime");
